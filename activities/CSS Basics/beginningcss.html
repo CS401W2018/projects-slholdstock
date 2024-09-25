@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beginning CSS</title>
+    <link rel="stylesheet" href="cssforbeginning.css">
+</head>
+<body>
+    <header>
+        <h1>Beginning CSS</h1>
+    </header>
+    <nav>
+        link link
+    </nav>
+    <main>
+        <h1>Cascading Style Sheets</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat blanditiis iure cum neque obcaecati inventore velit necessitatibus quisquam at rem accusamus commodi, id sint recusandae perspiciatis? Illo modi impedit eveniet?</p>
+        <h2>Explain the difference between inline, embedded, and external CSS</h2>
+        <p style="color:red">Inline is done with the style attribute on an HTML tag.</p> 
+        <p>First you put &lt;p style=(property name):(value);&gt; To get the red text the property name was color and the value was red.</p>
+       <p>Embedded CSS is when we go to the head section and add a &lt;style&gt; where we specify what we want it to change. In this case I did: p {font-family:arial, helvetica, sans-serif} to change the font of all the paragraphs to a different font.</p>
+       <p>External CSS is when we create a new file with the CSS specifications that we want. In order to bring it over to another page, we go to the &lt;head&gt; tag and type out &lt;link rel="stylesheet" href="(name of file)"&gt;.</p>
+        <h2>Explain why you should only use external CSS.</h2>
+        <p>We design web sites, not web pages. We want them all to look the same. By creating a seperate file with a CSS stylesheet, we can easily link our other pages to the same stylesheet so that it all looks uniform and connected. When editing, we also only need to edit one thing instead of once on each page. Seperation of concerns comes into play.</p>
+        <h2>What is a selector used for?</h2>
+        <p>A selector is used to define which parts of the HTML should be styled. This would be like the colors we use or the fonts or boldness or lack thereof.</p>
+    </main>
+    <footer>
+        &copy;2024 Samuel Holdstock
+    </footer>
+</body>
+</html>
