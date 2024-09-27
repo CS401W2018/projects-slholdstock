@@ -1,0 +1,27 @@
+body {
+    font-family:Arial, Helvetica, sans-serif;
+}
+#first {
+    color: rgb(0, 0, 255);
+}
+.green {
+    color:green;
+}
+.bigger{
+    font-size:20pt;
+}
+main .green{
+    font-family:fantasy
+}
+.yellow {
+    color:yellow;
+}
+.bold {
+    font-weight:800
+}
+.dark {
+    background-color: gray;
+}
+.light {
+    background-color: aliceblue;
+}
