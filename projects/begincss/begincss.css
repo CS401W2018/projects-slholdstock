@@ -1,4 +1,36 @@
-p {
-    color:darkblue;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+html {
+    background-color:antiquewhite
+}
+body {
+    color: darkblue;
+    font-family: monospace;
+    font-size: x-large;
+}
+h1 {
+    color:rgb(101, 101, 255);
+}
+h2 {
+    color: rgb(101, 101, 255);
+}
+footer {
+    color:rgb(209, 193, 174)
+}
+dd {
+    color: rgb(209, 193, 174);
+}
+#font {
+    font-family: fantasy;
+}
+.bold {
+    font-weight: bolder;
+}
+.darker {
+    color: rgb(196, 196, 255);
+    font-weight: bolder;
+}
+.em {
+    color: rgb(101, 101, 255);
+}
+.foot {
+    color: rgb(209, 193, 174);
 }
