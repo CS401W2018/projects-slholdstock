@@ -1,0 +1,31 @@
+nav a{
+    color: lightblue;
+}
+.current {
+    color: lightcyan;
+}
+.dot li {
+    list-style-type: none;
+    background: url(dot.png) no-repeat;
+    padding-left: 40px;
+    line-height: 1.5;
+}
+body {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: url(grass.jpg) darkgreen;
+}
+.index {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url(fans.jpg), url(grass.jpg);
+    background-repeat: no-repeat, repeat;
+    background-position: calc(100% - 30px) center, 0 0;
+    background-size: auto, auto;
+}
+.space {
+    padding: 5px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
