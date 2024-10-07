@@ -27,3 +27,6 @@ body.index {
 .space {
     margin-right: 300px;
 }
+.lighter {
+    color: rgba(255, 255, 255, 0.7);
+}
