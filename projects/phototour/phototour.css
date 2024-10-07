@@ -14,8 +14,9 @@ body {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background: url(grass.jpg) darkgreen;
+    
 }
-.index {
+body.index {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(fans.jpg), url(grass.jpg);
@@ -25,6 +26,7 @@ body {
 }
 .space {
     padding: 5px;
+    background-color: rgba(255,255,255,0.1);
     border-radius: 8px;
     margin-top: 20px;
 }
