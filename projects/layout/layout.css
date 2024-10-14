@@ -48,6 +48,7 @@ nav a {
     float: left;
     margin-left: 20px;
     border-radius: 2ch;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 nav a:hover {
@@ -100,4 +101,5 @@ footer {
     margin: 0 auto;
     background-color: rgb(236, 243, 254);
     padding-top: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
