@@ -1,0 +1,43 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    background-color: bisque;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-areas: 
+        "header header header"
+        "lside main rside"
+        "footer1 footer2 footer3";
+}
+
+.item {
+    background-color: rgb(138, 218, 242);
+    border: thin solid rgb(0, 0, 0);
+}
+
+.itemA {
+    grid-area: lside;
+}
+
+.itemB {
+    grid-area: rside;
+}
+
+.itemC {
+    grid-area: header;
+}
+
+.itemD {
+    grid-area: main;
+}
+
+.itemE {
+    grid-area: footer1;
+}
+
+.itemF {
+    grid-area: footer3;
+}
