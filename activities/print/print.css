@@ -1,0 +1,46 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aliceblue;
+}
+
+.lake {
+    width: 250px;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px rgba(1, 1, 1, .5);
+    margin: 20px 0;
+}
+
+.lake img{
+    width: 100%;
+}
+
+.text {
+    margin-left: 5px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    background-color: darkkhaki;
+    padding: 10px 10px;
+}
+
+nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: cadetblue;
+    padding: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
