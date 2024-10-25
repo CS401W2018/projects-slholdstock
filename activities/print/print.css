@@ -1,6 +1,11 @@
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: aliceblue;
+    margin: 0;
+}
+
+main {
+    margin: 10px;
 }
 
 .lake {
@@ -21,6 +26,7 @@ body {
 .card {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header {
@@ -38,9 +44,27 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: cadetblue;
-    padding: 5px;
+    padding: 0px;
 }
 
 nav a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 650px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+    }
+
+    .lake {
+        width: 100%;
+    }
+
+    .main-card {
+        order: -1;
+    }
 }

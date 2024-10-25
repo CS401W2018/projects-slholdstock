@@ -19,30 +19,30 @@
     </nav>
     <main>
         <h2>Why is the viewport meta tag important?</h2>
-        <p>Bro. Slade said he would talk about it on friday.</p>
-        <h2>How can you adjust the CSS for printing?</h2>
-        <p>A trick you can use is to make a new css sheet with all of the same CSS or changing it slightly for however you want the printed page to be. You then link an additional CSS stylesheet but use the media tag to clarify that one is for the screen and one is for the print.</p>
-        <h2>When would you want to adjust the CSS for printing?</h2>
-        <p>You would do this if you know that a page that you have created will specifically be used to print things, for example tickets or something like that.</p>
+        <p>it goes in the head tag that is automatically put in. It is what allows our media queries to work. If we don't have it, it will work on a desktop, but if we were to try it on a mobile device, it wouldn't work.</p>
+        <h2>When you select the same tag twice, and in one of them you say "flex-direction: column;" and the other says "flex-direction: row;", which one takes priority?</h2>
+        <p>"flex direction: row;" because it is the last thing that it was told to do so it is the last thing that will appear when it is put together. Whichever is there last is what shows up.</p>
+        <h2>How do you change the CSS for a web page displayed on a phone?</h2>
+        <p>You add media queries at the bottom of your css. Today we used the @media inquery so that screens that are smaller than a certain size will get the mobile version.</p>
         <div class="card">
             <div class="lake">
                 <img src="lake.jpg">
                 <div class="text">
-                    <h2>Lake Louise</h2>
+                    <h2>Left Lake Louise</h2>
+                    <p>Lorem ipsum dolor, sit amet</p>
+                </div>
+            </div>
+            <div class="lake main-card">
+                <img src="lake.jpg">
+                <div class="text">
+                    <h2>Center Lake Louise</h2>
                     <p>Lorem ipsum dolor, sit amet</p>
                 </div>
             </div>
             <div class="lake">
                 <img src="lake.jpg">
                 <div class="text">
-                    <h2>Lake Louise</h2>
-                    <p>Lorem ipsum dolor, sit amet</p>
-                </div>
-            </div>
-            <div class="lake">
-                <img src="lake.jpg">
-                <div class="text">
-                    <h2>Lake Louise</h2>
+                    <h2>Right Lake Louise</h2>
                     <p>Lorem ipsum dolor, sit amet</p>
                 </div>
             </div>
