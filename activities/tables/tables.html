@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement - Tables</title>
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <header>
+        <h1>Engagement - Tables</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+    </nav>
+    <main>
+        <h2>My Class Schedule</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Dept.</th><th>Num.</th><th>Time</th><th>Location</th><th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="5">Monday, Wednesday, Friday</td>
+                </tr>
+                <tr>
+                    <td>REL</td><td>200</td><td>09:00</td><td>STCHB</td><td>2</td>
+                </tr>
+                <tr>
+                    <td>POSC</td><td>101</td><td>10:00</td><td>MCK130</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>CS</td><td>140</td><td>12:00</td><td>P2</td><td>3</td>
+                </tr>
+                <tr>
+                    <td colspan="5">Tuesday, Thursday</td>
+                </tr>
+                <tr>
+                    <td>IT</td><td>124</td><td>8:00</td><td rowspan="2">HGB130</td><td>3</td>
+                </tr>
+                <tr>
+                    <td>BUSM</td><td>180</td><td>13:30</td><td>3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="total-credits">Total Credits</th>
+                    <td headers="total-credits">14</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        &copy;2024 Samuel Holdstock
+    </footer>
+</body>
+</html>
