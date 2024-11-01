@@ -17,7 +17,7 @@
     </nav>
     <main>
         <h2>My Class Schedule</h2>
-        <table border="1">
+        <table class="schedule">
             <thead>
                 <tr>
                     <th>Dept.</th><th>Num.</th><th>Time</th><th>Location</th><th>Credits</th>
@@ -25,7 +25,7 @@
             </thead>
             <tbody>
                 <tr>
-                    <td colspan="5">Monday, Wednesday, Friday</td>
+                    <td class="other" colspan="5">Monday, Wednesday, Friday</td>
                 </tr>
                 <tr>
                     <td>REL</td><td>200</td><td>09:00</td><td>STCHB</td><td>2</td>
@@ -37,7 +37,7 @@
                     <td>CS</td><td>140</td><td>12:00</td><td>P2</td><td>3</td>
                 </tr>
                 <tr>
-                    <td colspan="5">Tuesday, Thursday</td>
+                    <td class="other" colspan="5">Tuesday, Thursday</td>
                 </tr>
                 <tr>
                     <td>IT</td><td>124</td><td>8:00</td><td rowspan="2">HGB130</td><td>3</td>
@@ -53,6 +53,12 @@
                 </tr>
             </tfoot>
         </table>
+        <h2>Why don't we use the border property?</h2>
+        <p>We don't use it anymore because it causes a validation error. It isn't used anymore in HTML because it is now something that CSS does that is better integrated into the webpage itself.</p>
+        <h2>What is the easiest way to color every other row a different color?</h2>
+        <p>The easiest way to do it is to use the "(class for your table) tbody tr:nth-child(even or odd)" then inside the brackets designate it a certain background color and adjust it to get what you want.</p>
+        <h2>When should we use a table?</h2>
+        <p>We can use it for a schedule like we have with ours. You could use it to show stats for players or the roster of a team. It is very good at lists when you are hoping to highlight certain things. If you have a lot of data, use a table.</p>
     </main>
     <footer>
         &copy;2024 Samuel Holdstock
