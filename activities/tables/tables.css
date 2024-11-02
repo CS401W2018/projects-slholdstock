@@ -7,6 +7,7 @@ body {
     border-collapse: collapse;
     text-align: center;
     margin: 5px auto;
+    caption-side: bottom;
 }
 
 .schedule td,.schedule th {
@@ -24,4 +25,8 @@ body {
 
 .other{
     background-color: rgb(241, 170, 83);
+}
+
+caption {
+    
 }
