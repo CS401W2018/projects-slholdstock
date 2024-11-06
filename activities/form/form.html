@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement - Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>Engagement - Form</h1>
+    </header>
+    <nav>
+        <a href="#">These</a> &nbsp;
+        <a href="#">Are</a> &nbsp;
+        <a href="#">Fake</a> &nbsp;
+        <a href="#">Links</a>
+    </nav>
+    <main>
+        <form action="processing.html" method="post">
+            First Name: <input type="text" name="first" placeholder="First Name"><br>
+            Last Name: <input type="text" name="last" placeholder="Last Name"><br>
+            Gender: <input type="radio" name="test" value="male"> Male <input type="radio" name="test" value="female"> Female <br>
+            Date of Birth: <input type="date" name="birthday"><br>
+            Password: <input type="password" name="pass" placeholder="Password" required><br>
+            Email: <input type="email" name="email" placeholder="Email" required><br>
+            Phone Number: <input type="tel" name="number" placeholder="Phone Number" required><br>
+            <input type="checkbox" name="remember" checked> Remember Me <br>
+            Comments: <textarea name="comment" placeholder="Leave your comments."></textarea><br>
+            Class: <select name="state">
+                <option value="blank"></option>
+                <option value="fr">Freshman</option>
+                <option value="so">Sophomore</option>
+                <option value="jr">Junior</option>
+                <option value="sr">Senior</option>
+            </select><br>
+            <input type="reset">&nbsp;
+            <input type="submit">
+        </form>
+        <h2>The form tag has an "action" attribute. What does it do?</h2>
+        <p>The action tag acts as a tag that allows you to make your form tag send you to another website. Specifies where to send it to.</p>
+        <h2>The form tag has a "method" attribute. What does it do?</h2>
+        <p>Part of the HTTP protocol. Get tells it that it wants to read a page off of their server. Specifies the method of sending the form of data.</p>
+        <h2>What is the difference between a "POST" and a "GET"?</h2>
+        <p>The difference is that it won't show up in the URL of the browser. One is no more secure than the other. A get request is saying that you want to read something. Anytime you click on a link, it's a get request. A Post request means that you want to add or change information on the server. Logging in to a website is an example because you are changing from being not logged in to being logged in. Almost always you'll want to use a post request.</p>
+    </main>
+    <footer>
+        &copy;2024 Samuel Holdstock
+    </footer>
+</body>
+</html>
