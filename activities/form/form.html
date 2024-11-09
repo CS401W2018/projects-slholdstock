@@ -18,31 +18,69 @@
     </nav>
     <main>
         <form action="processing.html" method="post">
-            First Name: <input type="text" name="first" placeholder="First Name"><br>
-            Last Name: <input type="text" name="last" placeholder="Last Name"><br>
-            Gender: <input type="radio" name="test" value="male"> Male <input type="radio" name="test" value="female"> Female <br>
-            Date of Birth: <input type="date" name="birthday"><br>
-            Password: <input type="password" name="pass" placeholder="Password" required><br>
-            Email: <input type="email" name="email" placeholder="Email" required><br>
-            Phone Number: <input type="tel" name="number" placeholder="Phone Number" required><br>
-            <input type="checkbox" name="remember" checked> Remember Me <br>
-            Comments: <textarea name="comment" placeholder="Leave your comments."></textarea><br>
-            Class: <select name="state">
-                <option value="blank"></option>
-                <option value="fr">Freshman</option>
-                <option value="so">Sophomore</option>
-                <option value="jr">Junior</option>
-                <option value="sr">Senior</option>
-            </select><br>
-            <input type="reset">&nbsp;
-            <input type="submit">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="fname">First Name: </label>
+                    <input type="text" name="first" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="lname">Last Name: </label>
+                    <input type="text" name="last" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <label for="gender">Gender:</label>
+                    <label><input type="radio" name="test" value="male"> Male</label>
+                    <label><input type="radio" name="test" value="female"> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="dob">Date of Birth: </label>
+                    <input type="date" name="birthday">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password: </label>
+                    <input type="password" name="pass" placeholder="Password" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone Number: </label>
+                    <input type="tel" name="number" placeholder="Phone Number" required>
+                </div>
+                <div class="check-row">  
+                    <div class="spacer"></div>  
+                    <label>
+                        <input type="checkbox" name="remember" checked> 
+                        Remember Me
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments: </label>
+                    <textarea name="comment" placeholder="Leave your comments."></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="class">Class: </label>
+                    <select name="grade" id="grade">
+                        <option value="blank"></option>
+                        <option value="fr">Freshman</option>
+                        <option value="so">Sophomore</option>
+                        <option value="jr">Junior</option>
+                        <option value="sr">Senior</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="spacer">
+                    <input type="submit">
+                </div>
+            </fieldset>
         </form>
-        <h2>The form tag has an "action" attribute. What does it do?</h2>
-        <p>The action tag acts as a tag that allows you to make your form tag send you to another website. Specifies where to send it to.</p>
-        <h2>The form tag has a "method" attribute. What does it do?</h2>
-        <p>Part of the HTTP protocol. Get tells it that it wants to read a page off of their server. Specifies the method of sending the form of data.</p>
-        <h2>What is the difference between a "POST" and a "GET"?</h2>
-        <p>The difference is that it won't show up in the URL of the browser. One is no more secure than the other. A get request is saying that you want to read something. Anytime you click on a link, it's a get request. A Post request means that you want to add or change information on the server. Logging in to a website is an example because you are changing from being not logged in to being logged in. Almost always you'll want to use a post request.</p>
+        <h2>What are different ways to style your form?</h2>
+        <p>You can use flex or grid, but flex is a little easier and friendlier with the phone.</p>
+        <h2>Why does the professor like to use flex?</h2>
+        <p>It is easier to make it mobile friendly as well as computer or desktop friendly.</p>
     </main>
     <footer>
         &copy;2024 Samuel Holdstock

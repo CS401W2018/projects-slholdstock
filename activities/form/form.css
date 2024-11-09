@@ -5,3 +5,61 @@ body {
 nav {
     padding-bottom: 20px;
 }
+
+fieldset {
+    background-color: rgb(255, 225, 0);
+    box-shadow: 3px 3px 3px rgba(5, 5, 5, 0.5);
+}
+
+legend {
+    background-color: antiquewhite;
+    padding: 10px;
+    border: thin solid black;
+}
+
+.form-row, .check-row {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+input[type="submit"] {
+    background-color: blanchedalmond;
+    padding: 5px;
+}
+
+input:not([type="submit"]) {
+    padding: 10px;
+    font-size: 1.2em;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+input:not([type="submit"]):focus {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-row, .check-row{
+        flex-direction: column;
+    }
+
+    .form-row label, .spacer{
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        background-color: blanchedalmond;
+        padding: 5px;
+    }
+}
