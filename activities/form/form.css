@@ -33,6 +33,10 @@ legend {
     text-align: right;
 }
 
+.rig {
+    margin-left: 97px;
+}
+
 input[type="submit"] {
     background-color: blanchedalmond;
     padding: 5px;
@@ -54,7 +58,7 @@ input:not([type="submit"]):focus {
         flex-direction: column;
     }
 
-    .form-row label, .spacer{
+    .form-row label, .spacer, .rig{
         text-align: left;
     }
 
