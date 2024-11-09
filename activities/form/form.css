@@ -54,17 +54,18 @@ input:not([type="submit"]):focus {
 }
 
 @media only screen and (max-width: 600px) {
-    .form-row, .check-row{
+    .form-row, .check-row {
         flex-direction: column;
     }
 
     .form-row label, .spacer, .rig{
         text-align: left;
+        margin: 0px;
     }
 
     input[type="submit"] {
         background-color: blanchedalmond;
         padding: 5px;
-        width: 260%;
+        width: 100%;
     }
 }
