@@ -54,7 +54,6 @@ input[type="submit"] {
     border: thin solid black;
     border-radius: 5px;
     width: 150px;
-    margin-left: -150px;
 }
 
 input:not([type="submit"]) {
