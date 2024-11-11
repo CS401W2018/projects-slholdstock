@@ -39,9 +39,13 @@ legend {
     justify-content: left;
 }
 
-.form-row, label {
-    width: 300px;
+.form-row label {
+    width: 150px;
     text-align: right;
+}
+
+.bottom label {
+    width: 200px;
 }
 
 input[type="submit"] {
@@ -49,7 +53,8 @@ input[type="submit"] {
     color: white;
     border: thin solid black;
     border-radius: 5px;
-    width: 100%;
+    width: 150px;
+    margin-left: -150px;
 }
 
 input:not([type="submit"]) {
@@ -62,12 +67,8 @@ input:not([type="submit"]) {
     border-right: thin solid rgba(100, 100, 100, 0.545);
 }
 
-.special {
-    margin-left: -78px;
-}
-
 .specialone {
-    margin-left: -73px;
+    margin-left: 162px; 
     margin-bottom: 5px;
     margin-top: 10px;
 }
