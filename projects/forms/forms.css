@@ -73,11 +73,7 @@ input:not([type="submit"]) {
 }
 
 .spacer {
-    width: 300px;
-}
-
-.please {
-    margin-left: -105px;
+    width: 200px;
 }
 
 @media only screen and (max-width: 600px) {
