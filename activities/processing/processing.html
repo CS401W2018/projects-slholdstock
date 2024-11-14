@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engagement - Form Processing with JavaScript</title>
+    <link rel="stylesheet" href="processing.css">
+</head>
+<body>
+    <header>
+        <h1>Engagement - Form Processing with JavaScript</h1>
+    </header>
+    <nav>
+        <a href="#">These</a> &nbsp;
+        <a href="#">Are</a> &nbsp;
+        <a href="#">Fake</a> &nbsp;
+        <a href="#">Links</a>
+    </nav>
+    <main>
+        <form action="processing.html" method="post" id="myForm">
+            <fieldset>
+                <legend>Sign Up</legend>
+                <div class="form-row">
+                    <label for="first">First Name: </label>
+                    <input type="text" name="first" id="first" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="last">Last Name: </label>
+                    <input type="text" name="last" id="last" placeholder="Last Name">
+                </div>
+                <div class="check-row">
+                    <div class="spacers"></div>
+                    <label>Gender:</label>
+                    <label><input type="radio" name="test" id="male" value="male"> Male</label>
+                    <label><input type="radio" name="test" id="female" value="female"> Female</label>
+                </div>
+                <div class="form-row">
+                    <label for="birthday">Date of Birth: </label>
+                    <input type="date" name="birthday" id="birthday">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age: </label>
+                    <input type="number" name="age" id="age">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password: </label>
+                    <input type="password" name="pass" id="pass" placeholder="Password">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+                <div class="form-row">
+                    <label for="number">Phone Number: </label>
+                    <input type="tel" name="number" id="number" placeholder="Phone Number">
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="remember" id="remember" checked> 
+                        Remember Me
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label for="comment">Comments: </label>
+                    <textarea name="comment" id="comment" placeholder="Leave your comments."></textarea>
+                </div>
+                <div class="form-row">
+                    <label for="class">Class: </label>
+                    <select name="class" id="class">
+                        <option value="blank">--Select One--</option>
+                        <option value="fr">Freshman</option>
+                        <option value="so">Sophomore</option>
+                        <option value="jr">Junior</option>
+                        <option value="sr">Senior</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+        <h2>What is JavaScript? How did it get its name?</h2>
+        <p>It is called Java because it was made by java and they make scripts on the web. It makes the website more dynamic and more interactive.</p>
+        <h2>What are the two ways you can run JavaScript?</h2>
+        <p>In the browser and it automatically runs (in the DOM). You can also download it independently through node.js</p>
+        <h2>What was the most popular front-end js library?</h2>
+        <p>jQuery.js was the most popular</p>
+        <h2>What is the most popular front-end js library today?</h2>
+        <p>React.js is now the most popular that was developed by meta</p>
+    </main>
+    <footer>
+        &copy;2024 Samuel Holdstock
+    </footer>
+    <script>
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const first = document.getElementById('first').value;
+            const last = document.getElementById('last').value;
+            const pass = document.getElementById('pass').value;
+            const age = document.getElementById('age').value;
+            if (!first || !last) {
+                alert("You need a first and last name.")
+                return;
+            }
+            if (!age || age < 18) {
+                alert("You must be 18!")
+                return;
+            }
+            const formData = {
+                firstName: first,
+                lastName: last,
+                age: age
+            }
+            console.log(formData)
+            alert("It Worked!");
+        })
+    </script>
+</body>
+</html>
+
+
+        
