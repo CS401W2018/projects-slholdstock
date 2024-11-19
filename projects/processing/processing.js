@@ -4,6 +4,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     const last = document.getElementById('last').value;
     const pass = document.getElementById('pass').value;
     const age = document.getElementById('age').value;
+    const user = document.getElementById('user').value;
     if (!first || !last) {
         alert("You need a first and last name.")
         return;
@@ -11,10 +12,10 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     if (!age || age < 18) {
         alert("You must be 18!")
         return;
+    }
     if (pass.length <= 6) {
         alert("Your password must be at least 6 characters long!")
         return;
-    }
     }
     const formData = {
         firstName: first,
