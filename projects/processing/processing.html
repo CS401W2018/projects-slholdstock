@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Processing</title>
+    <link rel="stylesheet" href="processing.css">
+</head>
+<body>
+    <header>
+        <h1>Sign Up Now</h1>
+    </header>
+    <main>
+        <div id="message"></div>
+        <form action="somewhere.html" method="get" id="myForm">
+            <fieldset>
+                <legend>
+                    Personal Information
+                </legend>
+                <div class="form-row">
+                    <label for="first">First Name:</label>
+                    <input type="text" name="first" id="first" placeholder="First Name">
+                </div>
+                <div class="form-row">
+                    <label for="last">Last Name:</label>
+                    <input type="text" name="last" id="last" placeholder="Last Name">
+                </div>
+                <div class="form-row">
+                    <div class="spacer">Gender:</div>
+                    <div class="updown">
+                        <label><input type="radio" name="gender" id="male" value="male" checked>Male</label>
+                        <label><input type="radio" name="gender" id="female" value="female">Female</label>
+                        <label><input type="radio" name="gender" id="other" value="other">Other</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                </div>
+                <div class="form-row">
+                    <label for="number">Phone Number:</label>
+                    <input type="tel" name="number" id="number" placeholder="Phone Number">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="number" name="age" id="age" placeholder="Age">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Account Information
+                </legend>
+                <div class="form-row">
+                    <label for="user">Username:</label>
+                    <input type="text" name="user" id="user" placeholder="Username">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass" placeholder="Password">
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <label>
+                        <input type="checkbox" name="logged" id="logged" checked>
+                        Stay Logged In
+                    </label>
+                </div>
+                <div class="check-row">
+                    <div class="spacer"></div>
+                    <input type="submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        &copy;2024 Samuel Holdstock
+    </footer>
+    <script src="processing.js"></script>
+</body>
+</html>
