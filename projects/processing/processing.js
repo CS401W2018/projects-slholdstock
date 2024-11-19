@@ -20,8 +20,8 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
     const formData = {
         firstName: first,
         lastName: last,
-        password: document.getElementById('pass').value,
-        username: document.getElementById('user'),
+        password: pass,
+        username: user,
         age: age
     };
     const xhr = new XMLHttpRequest();
