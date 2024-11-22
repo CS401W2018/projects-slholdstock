@@ -1,0 +1,21 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.accordion  {
+    margin: 10px;
+}
+
+.smaller {
+    width: 500px;
+}
+
+.smaller img {
+    margin: 10px;
+    height: 400px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
