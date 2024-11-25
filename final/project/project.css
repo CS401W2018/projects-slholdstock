@@ -1,0 +1,193 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0px;
+    background-color: rgb(255, 227, 182);
+}
+
+footer {
+    background-color: green;
+    color: rgba(255, 255, 0, .7);
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    padding-left: 10px;
+}
+
+aside {
+    background-color: rgba(255, 0, 0,.8);
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0px;
+}
+
+.hometop, .homebottom {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 15px;
+}
+
+.homemiddle {
+    margin: 15px;
+}
+
+.feijoada {
+    order: -1;
+}
+
+li {
+    padding-top: 5px;
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 5px;
+}
+
+legend {
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    color: yellow;
+    text-align: center;
+    font-size: large;
+}
+
+fieldset {
+    border: none;
+    margin-top: 10px;
+}
+
+input:not([type="submit"]) {
+    width: 96%;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding: 5px;
+    margin-top: 7px;
+}
+
+input[type="submit"] {
+    width: 98%;
+    font-size: 1em;
+    margin-top: 10px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+figure img {
+    width: 500px;
+}
+
+.under {
+    text-decoration: underline;
+}
+
+main p {
+    font-size: large;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: yellow;
+    width: 150px;
+    text-align: center;
+}
+
+nav a:hover {
+    border: thin solid yellow;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5px;
+    background-color: green;
+}
+
+header {
+    background-color: rgba(255, 0, 0,.8);
+    padding: 5px;
+}
+
+header h2 {
+    margin-top: 0px;
+    color: yellow;
+    font-size: 150%;
+    padding-left: 10px;
+}
+
+header h1 {
+    margin-bottom: 0px;
+    color: green;
+    font-size: 300%;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    header {
+        text-align: center;
+    }
+
+    main {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body p {
+        margin: 10px;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        width: 100%;
+        margin-bottom: 7px;
+    }
+
+    input:not([type="submit"]) {
+        width: 97%;
+    }
+    
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .hometop, .homebottom, .homemiddle{
+        flex-direction: column;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    figure {
+        margin: 10px;
+        padding: 0px;
+    }
+
+    figure img {
+        width: 100%;
+    }
+    
+    .aside {
+        flex-direction: column;
+        order: 2;
+        width: 100%;
+        padding: 0px;
+    }
+}
