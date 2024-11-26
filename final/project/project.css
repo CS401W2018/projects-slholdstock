@@ -1,7 +1,7 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 0px;
-    background-color: rgb(255, 227, 182);
+    background-color: rgba(253, 187, 121, 0.4);
 }
 
 footer {
@@ -12,14 +12,40 @@ footer {
 
 main {
     display: flex;
-    padding-left: 10px;
 }
 
 aside {
     background-color: rgba(255, 0, 0,.8);
-    flex-direction: column;
-    flex-wrap: nowrap;
-    margin: 0px;
+    width: 30%;
+}
+
+.signup {
+    background-color: rgba(255, 0, 0,.8);
+    text-align: center;
+}
+
+.form-row, .check-row{
+    display: flex;
+    margin-top: 5px;
+    gap: 15px;
+}
+
+.form-row label {
+    width: 150px;
+    text-align: right;
+}
+
+.spacer {
+    width: 150px;
+    text-align: right;
+}
+
+.belowvid {
+    width: 50%;
+}
+
+.belowvid p {
+    padding: 20px;
 }
 
 .hometop, .homebottom {
@@ -55,13 +81,18 @@ legend {
     font-size: large;
 }
 
+#message {
+    text-align: center;
+    padding: 5px;
+}
+
 fieldset {
     border: none;
     margin-top: 10px;
 }
 
 input:not([type="submit"]) {
-    width: 96%;
+    width: 100%;
     font-size: 1.2em;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -73,15 +104,17 @@ input:not([type="submit"]) {
 }
 
 input[type="submit"] {
-    width: 98%;
+    width: 100%;
     font-size: 1em;
     margin-top: 10px;
     height: 30px;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 figure img {
-    width: 500px;
+    width: 350px;
+    padding-top: 20px;
 }
 
 .under {
@@ -96,12 +129,12 @@ nav a{
     display: block;
     text-decoration: none;
     color: yellow;
-    width: 150px;
+    width: 100%;
     text-align: center;
 }
 
 nav a:hover {
-    border: thin solid yellow;
+    color: white;
 }
 
 nav {
@@ -132,6 +165,97 @@ header h1 {
     padding-left: 10px;
 }
 
+.left {
+    text-align: right;
+}
+
+table {
+    border: thin solid black;
+    border-collapse: collapse;
+    width: 500px;
+    margin: 20px;
+}
+
+td, th {
+    border: thin solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.asado img {
+    width: 500px;
+}
+
+.argmid {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.argbot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+iframe {
+    padding: 20px;
+}
+
+.chimichurri caption{
+    border: thin solid black;
+    border-collapse: collapse;
+    background-color: white;
+    padding: 5px;
+}
+
+th {
+    background-color: white;
+}
+
+.chimichurri tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+.argtop {
+    display: flex;
+    flex-direction: row;
+}
+
+.argintro {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.asado {
+    order: 2;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgb(255, 244, 226);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 1200px) {
+    .wrapper {
+        width: 100%;
+        order: 2;
+    }
+    
+    main {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .aside {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     header {
         text-align: center;
@@ -158,6 +282,9 @@ header h1 {
     nav a {
         width: 100%;
         margin-bottom: 7px;
+        font-size: 20px;
+        border-bottom: thin solid yellow;
+        padding-bottom: 5px;
     }
 
     input:not([type="submit"]) {
@@ -168,11 +295,15 @@ header h1 {
         width: 100%;
     }
 
-    .hometop, .homebottom, .homemiddle{
+    .hometop, .homebottom, .homemiddle, .arg, .argtop, .argbot, .belowvid{
         flex-direction: column;
         width: 100%;
         padding: 0px;
         margin: 0px;
+    }
+
+    .hometop p, .homebottom p, .homemiddle p {
+        padding: 20px;
     }
 
     figure {
@@ -183,11 +314,48 @@ header h1 {
     figure img {
         width: 100%;
     }
+
+    iframe {
+        width: 92%;
+    }
     
     .aside {
-        flex-direction: column;
+        flex-direction: row;
         order: 2;
         width: 100%;
         padding: 0px;
+    }
+
+    .check-row, .form-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .check-row label, .form-row label {
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+
+    .spacer {
+        width: 0px;
+    }
+
+    .countrieslist {
+        display: none;
+    }
+
+    .signup {
+        margin-top: 20px;
+    }
+
+    table {
+        width: auto;
+    }
+
+    .argasado img, .argvideo {
+        width: 100%;
     }
 }

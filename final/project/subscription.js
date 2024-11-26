@@ -13,7 +13,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
         email: email
     };
     const xhr = new XMLHttpRequest();
-    xhr.open("GET", "processing.json", true);
+    xhr.open("GET", "subscription.json", true);
     xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4 && xhr.status === 200) {

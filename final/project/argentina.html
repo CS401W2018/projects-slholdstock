@@ -7,17 +7,113 @@
     <link rel="stylesheet" href="project.css">
 </head>
 <body>
-    <header>
-        <h1><strong>Tierra de Sabor</strong></h1>
-        <h2><em>~Land of Flavor~</em></h2>
-    </header>
-    <nav>
-        <a href="home.html">Home</a>
-        <a href="argentina.html"><div class="under">Argentina</div></a>
-        <a href="bolivia.html">Bolivia</a>
-        <a href="brazil.html">Brazil</a>
-        <a href="colombia.html">Colombia</a>
-        <a href="mexico.html">Mexico</a>
-    </nav>
+    <div class="wrapper">
+        <header>
+            <h1><strong>Tierra de Sabor</strong></h1>
+            <h2><em>~Land of Flavor~</em></h2>
+        </header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="argentina.html"><div class="under">Argentina</div></a>
+            <a href="bolivia.html">Bolivia</a>
+            <a href="brazil.html">Brazil</a>
+            <a href="colombia.html">Colombia</a>
+            <a href="mexico.html">Mexico</a>
+        </nav>
+        <main>
+            <div class="arg">
+                <div class="argtop">
+                    <article class="argintro">
+                        <p>Argentina has a rich culinary history that dates back to before the 16th century. Since then, they have gone forth adding to their cuisine through the indigenous, European, Spanish, and African influences that were brought over the years. They adopted additional cooking methods from Argentina's native people -- the Guaraní, Quechua, and Mapuche.</p>
+                        <p>Today, Argentina is best known for their beef which they prepare as an <strong>asado</strong> which means barbecue. Argentina is considered to have the highest quality beef in the entire world. They pair their delicious meats with a mouth-watering chimichurri sauce which is a blend of fresh herbs and oil with a tangy acid to balance the flavors. Their cuisine is so much more than just meat though. They also specialize in empanadas that are like pastries that are stuffed with meat, vegetables, and cheese.</p>
+                    </article>
+                    <div class="argasado">
+                        <figure class="asado">
+                            <img src="asado.jpg" alt="Argentine piece of meat that is being sliced in half.">
+                            <figcaption><strong>Argentine asado</strong></figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="argmid">
+                    <p>Their world renowned asado dates back centuries ago when the first Spanish colonists brought cows to Argentina. As ovens and the other common cooking methods that we have today were not invented yet at the time, the gauchos, Argentine cowboys, would prepare the beef that they had only seasoned with salt over an open flame. They would invite all of their family and friends to share the wonderful meal. Today it is a common sight to see many families gathered together in the streets or in someone's yard with a parrilla, cooking up their favorite beef.</p>
+                    <p>Francis Mallmann is one of Argentina's best chefs that has perfected the Argentine asado and chimichurri sauce. You can find his chimichurri recipe <a href="https://nymag.com/restaurants/recipes/inseason/58057/">here</a>!</p>
+                </div>
+                <div class="argbot">
+                    <table class="chimichurri">
+                        <caption><strong>Chimichurri Ingredients List</strong></caption>
+                        <thead>
+                            <tr>
+                                <th class="ingred">Amount</th><th>Ingredient</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="left">1 cup</td><td>water</td>
+                            </tr>
+                            <tr>
+                                <td class="left">1 tbsp.</td><td>coarse salt</td>
+                            </tr>
+                            <tr>
+                                <td class="left">1 head</td><td>peeled garlic cloves</td>
+                            </tr>
+                            <tr>
+                                <td class="left">1 cup</td><td>fresh parsley leaves</td>
+                            </tr>
+                            <tr>
+                                <td class="left">1 cup</td><td>fresh oregano leaves</td>
+                            </tr>
+                            <tr>
+                                <td class="left">2 tsp.</td><td>crushed red-pepper flakes</td>
+                            </tr>
+                            <tr>
+                                <td class="left">1/4 cup</td><td>red-wine vinegar</td>
+                            </tr>
+                            <tr>
+                                <td class="left">1/2 cup</td><td>extra-virgin olive oil</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="argvideo">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/jLNeDj6NdmA?si=WoxtA3gKRSdqmRXn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>        
+                </div>
+                <div class="signup">
+                    <fieldset>
+                        <legend><strong>Sign up for recipes!</strong></legend>
+                        <div id="message"></div>
+                        <form action="somewhere.html" method="get" id="myForm">
+                            <p>Fill out the form below to receive weekly emails with recipes from your favorite Latin American countries!</p>
+                            <div class="form-row">
+                                <label for="first">First Name:</label>
+                                <input type="text" id="first" name="first" placeholder="First Name">
+                            </div>
+                            <div class="form-row">
+                                <label for="last">Last Name:</label>
+                                <input type="text" id="last" name="last" placeholder="Last Name">
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email Address:</label>
+                                <input type="email" id="email" name="email" placeholder="Email Address">
+                            </div>
+                            <div class="check-row">
+                                <div class="spacer"></div>
+                                <label class="agree">
+                                    <input type="checkbox" name="agree" id="agree" checked>
+                                    Do you agree to receive weekly emails?
+                                </label>
+                            </div>
+                            <div class="form-row">
+                                <div class="spacer"></div>
+                                <input type="submit">
+                            </div>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </main>
+        <footer>
+            &copy;2024 Samuel Holdstock
+        </footer>
+    </div>
 </body>
 </html>
