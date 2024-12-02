@@ -24,6 +24,7 @@ main {
     background-color: red;
     text-align: center;
     padding-top: 10px;
+    font-weight: bold;
 }
 
 .form-row, .check-row{
@@ -37,18 +38,39 @@ main {
     text-align: right;
 }
 
+.spacer {
+    width: 130px;
+}
+
+.spacers {
+    width: 150px;
+}
 
 .check-row {
     display: flex;
-    justify-content: end;
+    align-items: left;
+    justify-content: left;
     margin-top: 5px;
     gap: 10px;
 }
 
 .check-row label {
-    display: flex; 
-    align-items: left; 
-    width: 100%;
+    font-size: 1em;
+    color: black;
+    text-align: left;
+    margin: 0px;
+}
+
+.check-row input[type="checkbox"] {
+    margin: 0px;
+    width: 25px;
+}
+
+label .agree {
+    display: flex;
+    align-items: left;
+    gap: 5px;
+    font-size: 1em;
 }
 
 .belowvid {
@@ -90,6 +112,8 @@ legend {
     color: yellow;
     text-align: center;
     font-size: large;
+    font-weight: bolder;
+    font-size: 25px;
 }
 
 #message {
