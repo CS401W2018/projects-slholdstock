@@ -100,7 +100,8 @@ li {
 
 figcaption {
     text-align: center;
-    padding-top: 5px;
+    padding-top: 10px;
+    color: rgb(1, 108, 1);
 }
 
 legend {
@@ -153,6 +154,10 @@ figure img {
 .tacaca img {
     width: 500px;
     margin-top: 25px;
+}
+
+.mole img {
+    width: 400px;
 }
 
 .under {
@@ -230,7 +235,12 @@ td, th {
     margin-bottom: 10px;
 }
 
-.sancocho {
+.pozole img {
+    width: 600px;
+    margin-bottom: 10px;
+}
+
+.sancocho, .pozole {
     display: flex;
     flex-direction: column;
     justify-content: center;
