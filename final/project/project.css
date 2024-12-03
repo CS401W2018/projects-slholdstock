@@ -48,7 +48,6 @@ main {
 
 .check-row {
     display: flex;
-    align-items: left;
     justify-content: left;
     margin-top: 5px;
     gap: 10px;
@@ -68,7 +67,6 @@ main {
 
 label .agree {
     display: flex;
-    align-items: left;
     gap: 5px;
     font-size: 1em;
 }
@@ -257,6 +255,7 @@ td, th {
 
 iframe {
     padding: 20px;
+    border: none;
 }
 
 .chimichurri caption{
