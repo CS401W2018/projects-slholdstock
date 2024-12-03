@@ -85,7 +85,7 @@ label .agree {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin: 15px;
+    margin: 20px;
 }
 
 .homemiddle {
@@ -222,8 +222,21 @@ td, th {
     padding: 5px;
 }
 
-.asado img {
+.asado img, .bandeja img {
     width: 500px;
+    margin-top: 30px;
+}
+
+.sancocho img {
+    width: 500px;
+    margin-bottom: 10px;
+}
+
+.sancocho {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .argmid {
@@ -331,10 +344,15 @@ th {
 
     nav a {
         width: 100%;
-        margin-bottom: 7px;
+        margin-bottom: 07px;
         font-size: 20px;
         border-bottom: thin solid yellow;
         padding-bottom: 5px;
+    }
+
+    .under {
+        text-decoration: none;
+        color: white;
     }
 
     input:not([type="submit"]) {
@@ -414,7 +432,33 @@ th {
         width: auto;
     }
 
-    .argasado img, .argvideo {
+    .argasado img, .argvideo, .bandeja img{
         width: 100%;
+    }
+
+    .bandeja img {
+        margin-top: 0px;
+    }
+
+    .bandeja figcaption {
+        margin-bottom: 10px;
+    }
+
+    .sancocho img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .belowvid table {
+        width: 93%;
+    }
+
+    .title {
+        padding: 10px;
+    }
+
+    .country {
+        padding-left: 30px;
+        padding-top: 30px;
     }
 }
