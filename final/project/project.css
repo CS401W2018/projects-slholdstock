@@ -21,7 +21,7 @@ main {
 }
 
 .signup {
-    background-color: red;
+    background-color: rgb(201, 0, 0);
     text-align: center;
     padding-top: 10px;
     font-weight: bold;
@@ -194,7 +194,7 @@ nav {
 }
 
 header {
-    background-color: red;
+    background-color: rgb(201, 0, 0);
     padding: 5px;
 }
 
@@ -241,7 +241,11 @@ td, th {
 }
 
 .tacaca img {
-    margin-top: 80px;
+    margin-top: 0px;
+}
+
+.cordero img {
+    width: 500px;
 }
 
 .bandeja img {
@@ -253,6 +257,10 @@ td, th {
     margin-top: 40px;
 }
 
+.feijoada img {
+    margin-top: -30px;
+}
+
 .taco img {
     width: 350px;
 }
@@ -262,7 +270,7 @@ td, th {
     margin-bottom: 10px;
 }
 
-.sancocho, .pozole, .asado, .saltena, .tacaca, .bandeja, .nogada, .mole {
+.sancocho, .pozole, .asado, .saltena, .tacaca, .bandeja, .nogada, .mole, .cordero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -479,7 +487,7 @@ th {
         width: auto;
     }
 
-    .argasado img, .argvideo, .bandeja img, .mole img, .saltena img {
+    .argasado img, .argvideo, .bandeja img, .mole img, .saltena img, .cordero img {
         width: 100%;
     }
 
@@ -512,4 +520,6 @@ th {
     .saltena img, .tacaca img {
         margin: 0px;
     }
+
+    
 }
