@@ -87,7 +87,7 @@ label .agree {
 }
 
 .homemiddle {
-    margin: 15px;
+    margin: 20px;
 }
 
 .feijoada {
@@ -158,6 +158,11 @@ figure img {
 
 .mole img {
     width: 400px;
+}
+
+.saltena img {
+    width: 450px;
+    margin-top: 80px;
 }
 
 .under {
@@ -235,12 +240,29 @@ td, th {
     margin-bottom: 10px;
 }
 
+.tacaca img {
+    margin-top: 80px;
+}
+
+.bandeja img {
+    margin-top: 70px;
+}
+
+.nogada img {
+    width: 500px;
+    margin-top: 40px;
+}
+
+.taco img {
+    width: 350px;
+}
+
 .pozole img {
     width: 600px;
     margin-bottom: 10px;
 }
 
-.sancocho, .pozole {
+.sancocho, .pozole, .asado, .saltena, .tacaca, .bandeja, .nogada, .mole {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,10 +343,26 @@ th {
         padding: 0px;
     }
 
-    .aside {
-        display: flex;
+    .argtop {
         flex-direction: column;
-        width: 100%;
+    }
+
+    .saltena img {
+        width: 450px;
+        margin-top: 0px;
+    }
+
+    .bandeja img {
+        width: 600px;
+        margin-top: 0px;
+    }
+
+    .saltena figcaption,  .bandeja figcaption{
+        margin-bottom: 50px;
+    }
+
+    .video iframe{
+        width: 90%;
     }
 }
 
@@ -441,7 +479,7 @@ th {
         width: auto;
     }
 
-    .argasado img, .argvideo, .bandeja img{
+    .argasado img, .argvideo, .bandeja img, .mole img, .saltena img {
         width: 100%;
     }
 
@@ -469,5 +507,9 @@ th {
     .country {
         padding-left: 30px;
         padding-top: 30px;
+    }
+
+    .saltena img, .tacaca img {
+        margin: 0px;
     }
 }
