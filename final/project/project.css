@@ -365,6 +365,11 @@ th {
         margin-top: 0px;
     }
 
+    .taco img {
+        margin-top: 100px;
+        width: 400px;
+    }
+
     .saltena figcaption,  .bandeja figcaption{
         margin-bottom: 50px;
     }
@@ -487,7 +492,7 @@ th {
         width: auto;
     }
 
-    .argasado img, .argvideo, .bandeja img, .mole img, .saltena img, .cordero img {
+    .argasado img, .argvideo, .bandeja img, .mole img, .saltena img, .cordero img, .nogada img, .taco img {
         width: 100%;
     }
 
